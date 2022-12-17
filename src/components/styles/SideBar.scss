@@ -1,10 +1,26 @@
+#root {
+    $sideBarLeft : '0px'
+}
+
+div {
+    .toggler {
+        .hamburger {
+            position: absolute;
+        }
+
+        .hidebutton {
+            position: absolute;
+            right: 0px;
+        }
+    }
 #header {
-    width: 20%;
+    width: 275px;
     height: 100vh;
     background-color: #070b0e;
+    transition: 0.2s;
 
     div {
-        .pofile-container {
+        .profile-container {
             text-align: center;
 
             img {
@@ -60,5 +76,19 @@
                 background-color: #111a22
             }
         }
+    }
+}
+}
+
+@media only screen and (min-width: 768px) {
+    .toggler {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        position: relative;
+        left: var(--sideBarLeft);
     }
 }
