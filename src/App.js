@@ -1,17 +1,11 @@
-import './App.css';
-import Footer from './components/common/Footer';
-import { Navbar } from './components/common/Navbar';
-import SideBar from './components/common/SideBar'
+import MainContainer from './components/MainContainer';
 import PublicRoutes from './routes/PublicRoutes';
+
 function App() {
   return (
-    <>
-      {/* <Navbar /> */}
-      <SideBar />
-      <PublicRoutes />
-      <Footer />
-    </>
-
+      <MainContainer >
+        <PublicRoutes />
+      </MainContainer>
   );
 }
 

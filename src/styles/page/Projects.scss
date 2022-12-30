@@ -1,0 +1,22 @@
+#Projects {
+
+    background-color: whitesmoke;
+    position: relative;
+
+    .project-container {
+
+        .p-button {
+            position: absolute;
+            right: 1rem;
+            top: 2rem;
+        }
+
+        padding: 1rem;
+
+        .project-content {
+            padding: 1rem 0;
+            height: 100vh;
+            overflow-y: scroll;
+        }
+    }
+}
