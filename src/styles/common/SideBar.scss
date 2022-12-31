@@ -74,19 +74,22 @@ div {
 
                     .nav-link {
                         text-decoration: none;
-                        color: rgb(190, 167, 167);
-
+                        color: white;
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
                         padding: 5px 0 5px 15px;
                         margin: 2px 0;
                     }
+
+                    .nav-link:hover {
+                        color: black;
+                    }
                 }
 
                 li:hover {
                     width: 100%;
-                    background-color: #223a4f
+                    background-color: lightcyan;
                 }
             }
         }
